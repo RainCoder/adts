@@ -6,13 +6,14 @@ using namespace std;
 
 int Stack::size()
 {
-  data.size();
+  return data.size();
 }
 
 void Stack::push(int val)
 {
  int k = 1;
 data.insert(val,k);
+
 }
 
 void Stack::pop()
@@ -23,7 +24,7 @@ data.remove(k);
 
 int Stack::top()
 {
-	data.display();
+	data.getAt(size());
 	
 }
 
