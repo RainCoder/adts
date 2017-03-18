@@ -110,3 +110,8 @@ int List::getAt(int k)
 	return currPtr -> data;
 }
 	
+void List::clear()
+{
+	while(num_elements != 0)
+	 remove(1);
+}
