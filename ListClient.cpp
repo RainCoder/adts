@@ -59,7 +59,7 @@ cout << "Do you wish to remove another element in List 1? (y/n)";
 cin >> ans;
 }
 
-cout << "Do you wish to remove an element in List 1? (y/n)";
+cout << "Do you wish to remove an element in List 2? (y/n)";
 cin >> ans;
 
 while( ans == 'y' && L2.size() != 0){
@@ -81,6 +81,6 @@ cin >> ans;
 
 
 cout << "The first element of List 1 is " <<  L1.getAt(1) << "\n";
-cout << "The second element of List 1 is " <<  L1.getAt(2) << "\n";
+cout << "The second element of List 2 is " <<  L2.getAt(2) << "\n";
 
 }
