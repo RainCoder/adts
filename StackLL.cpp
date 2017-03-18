@@ -23,7 +23,7 @@ int Stack::size()
 	return num_elements;
 }
 
-void Stack::push(int val)
+void Stack::push(string val)
 {
 	Node* newPtr = new Node{val};
 	newPtr -> link = frontPtr;
