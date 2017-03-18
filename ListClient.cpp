@@ -22,9 +22,11 @@ for ( int i= 1; i <= lim ; i++)
 		L1.insert(i+1, i);
 		L2.insert(i+2, i);
 	}
-	
-	L1.insert(i+1, i-1);
-	L2.insert(i+2, i-1);
+	else
+	{
+		L1.insert(i+1, i-1);
+		L2.insert(i+2, i-1);
+	}
 }
 
 cout << "List 1: ";
