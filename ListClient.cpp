@@ -12,7 +12,7 @@ int lim, rm;
 char ans;
 
 cout << "Please enter list size (an integer)";
-getline(cin,lim);
+cin >> lim;
 
 
 for ( int i= 1; i >= lim ; i++)
@@ -36,12 +36,12 @@ L2.display();
 cout << "size: " << L2.size();
 
 cout << "Do you wish to remove an element in List 1? (y/n)";
-cin >> ans
+cin >> ans;
 
 while( ans == 'y' && L1.size() != 0){
 
 cout << "Please enter the position of the element you wish to remove in List 1(an integer)";
-getline(cin,rm);
+cin >> rm;
 
 L1.remove(rm);
 
@@ -50,13 +50,13 @@ L1.display();
 cout << "size: " << L1.size();
 
 cout << "Do you wish to remove another element in List 1? (y/n)";
-cin >> ans
+cin >> ans;
 }
 
 while( ans == 'y' && L2.size() != 0){
 
 cout << "Please enter the position of the element you wish to remove in List 2(an integer)";
-getline(cin,rm);
+cin >> rm;
 
 L1.remove(rm);
 
@@ -65,7 +65,7 @@ L2.display();
 cout << "size: " << L2.size();
 
 cout << "Do you wish to remove another element in List 2? (y/n)";
-cin >> ans
+cin >> ans;
 }
 
 
