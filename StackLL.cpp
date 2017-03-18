@@ -1,13 +1,12 @@
 #include "StackLL.h"
-#include <string> 
 #include <iostream>
 using namespace std;
 
 
-class Stack::Node 
+class Stack::Node //self-referential Node class
 {
 	public:
-	   string data = " ";
+	   int data = 0;
 	   Node* link = nullptr;
 	
 	};
@@ -15,7 +14,7 @@ class Stack::Node
 Stack::~Stack()
 {
 while(num_elements > 0)
-  remove(1);
+ remove(1);
 }
 
 int Stack::size()
@@ -23,7 +22,7 @@ int Stack::size()
 	return num_elements;
 }
 
-void Stack::push(string val)
+void Stack::push(int val)
 {
 	Node* newPtr = new Node{val};
 	newPtr -> link = frontPtr;
@@ -50,5 +49,5 @@ int Stack::top()
 void Stack::clear()
 {
 	while(num_elements != 0)
-	 remove(1);
+	 int x = remove(1);
 }
