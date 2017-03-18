@@ -101,9 +101,9 @@ void List::display()
 
 int List::getAt(int k)
 {
-	Node* currPtr= frontPrt;
+	Node* currPtr = frontPtr;
 	
-	for(int loc=1; loc!= k; loc++)
+	for(int loc = 1; loc != k; loc++)
 	{
 		currPtr = currPtr -> link;
 	}
