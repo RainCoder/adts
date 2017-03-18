@@ -3,7 +3,7 @@
 using namespace std;
 
 
-class List::Node //self-referential Node class
+class Stack::Node //self-referential Node class
 {
 	public:
 	   int data = 0;
