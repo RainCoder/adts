@@ -91,5 +91,22 @@ void List::remove(int k)
 	num_elements--;
 	}
 	
-	//Implementations of missing operations
+void List::display()
+{
+	for(Node* currPtr = frontPtr; currPtr != nullptr; currPtr = currPtr -> link)
+	{
+		cout << currPtr -> data << " ";
+	}
+}
+
+int List::getAt(int k)
+{
+	Node* currPtr= frontPrt;
+	
+	for(int loc=1; loc!= k; loc++)
+	{
+		currPtr = currPtr -> link;
+	}
+	return currPtr -> data;
+}
 	
