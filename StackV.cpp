@@ -23,8 +23,8 @@ void Stack::pop()
 
 int Stack::top()
 {
-	k = size()-1;
-	return data.[k];
+	int k = size()-1;
+	return data[k];
 	
 }
 
