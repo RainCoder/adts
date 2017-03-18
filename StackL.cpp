@@ -24,7 +24,7 @@ data.remove(k);
 
 int Stack::top()
 {
-	int k = data.size();
+	int k = size();
 	return data.getAt(k);
 	
 }
