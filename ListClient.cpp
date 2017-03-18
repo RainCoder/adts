@@ -37,7 +37,7 @@ cout << "size: " << L1.size() << "\n";
 cout << "List 2: ";
 L2.display();
 cout << "\n";
-cout << "size: " << L2.size() << "/n";
+cout << "size: " << L2.size() << "\n";
 
 cout << "Do you wish to remove an element in List 1? (y/n)";
 cin >> ans;
@@ -67,10 +67,10 @@ cout << "\n";
 cout << "Please enter the position of the element you wish to remove in List 2(an integer)";
 cin >> rm;
 
-L1.remove(rm);
+L2.remove(rm);
 cout << "\n";
 
-cout << "List 1: ";
+cout << "List 2: ";
 L2.display();
 cout << "\n";
 cout << "size: " << L2.size() << "\n";
@@ -80,7 +80,7 @@ cin >> ans;
 }
 
 
-cout << "The first element of List 1 is" <<  L1.getAt(1) << "\n";
-cout << "The second element of List 1 is" <<  L1.getAt(2) << "\n";
+cout << "The first element of List 1 is " <<  L1.getAt(1) << "\n";
+cout << "The second element of List 1 is " <<  L1.getAt(2) << "\n";
 
 }
