@@ -14,7 +14,7 @@ class Stack::Node
 Stack::~Stack()
 {
 while(num_elements > 0)
- pop(1);
+ pop();
 }
 
 int Stack::size()
@@ -49,5 +49,5 @@ int Stack::top()
 void Stack::clear()
 {
 	while(num_elements != 0)
-	 pop(1);
+	 pop();
 }
