@@ -20,6 +20,7 @@ class List //begin List definition
      int size();//return the number of elements in the List
      void display(); //displays the elements of the list
      int getAt(int k); //returns elements positioned at 'k'
+     void clear(); //removes all elements
 
 };//end List definition
 
