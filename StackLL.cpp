@@ -28,7 +28,7 @@ void Stack::push(int val)
 	newPtr -> link = frontPtr;
 	frontPtr = newPtr;
 	
-	num_element++;
+	num_elements++;
 }
 
 void Stack::pop()
@@ -38,7 +38,7 @@ void Stack::pop()
 	frontPtr = frontPtr -> link;
 	
 	delete delPtr;
-	num_element--;
+	num_elements--;
 }
 
 int Stack::top()
@@ -49,5 +49,5 @@ int Stack::top()
 void Stack::clear()
 {
 	while(num_elements != 0)
-	 int x = remove(1);
+	 remove(1);
 }
