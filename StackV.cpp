@@ -6,7 +6,7 @@ using namespace std;
 
 int Stack::size()
 {
-  data.size();
+  return data.size();
 }
 
 void Stack::push(int val)
